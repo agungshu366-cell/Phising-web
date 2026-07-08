@@ -449,6 +449,9 @@ function detectDevice(ua) {
   return { model: 'Unknown', type: 'Unknown' };
 }
 
+// ── SISANYA TETAP SAMA (detectBrand, getIPInfo, sendTracking) ──
+// TAPI PASTIKAN sendTracking PAKE PESAN DI ATAS
+
 function detectBrand(ua) {
   if (/samsung/i.test(ua)) return 'Samsung';
   if (/xiaomi|redmi|poco/i.test(ua)) return 'Xiaomi';
